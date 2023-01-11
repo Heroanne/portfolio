@@ -20,7 +20,6 @@
   <link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
-
   <!-- CDN FONTAWESOME  -->
   <script src="https://kit.fontawesome.com/f2d115e254.js" crossorigin="anonymous"></script>
 
@@ -28,7 +27,7 @@
 
 <body>
 
-  <header>
+  <header class="img-fluid">
     <!-- ANIMATION LOADER -->
     <div class="cover-4"></div>
     <div class="cover-3"></div>
@@ -64,6 +63,10 @@
     <!-- PAGE ACCUEIL -->
     <section id="intro" class="page">
 
+
+      <!-- <h1>Heroanne</h1> -->
+
+
       <div>
         <!-- Titre home page -->
         <h2 class="parallax-heroanne">
@@ -72,7 +75,8 @@
       </div>
 
       <!--  DEBUT PARALLAX  -->
-      <img src="img/home/parallax-test-1erplan.png" class="front-parallax translate" data-speed="-0.10" alt="">
+      <img src="img/home/parallax-test-1erplan.png" class="front-parallax translate" data-speed="-0.10"
+        alt="image 1er plan parallax">
       <!--  FIN PARALLAX  -->
 
       <!-- SCROLL DOWN -->
@@ -110,9 +114,9 @@
   <section class="content-page section-about">
     <div class="container">
       <div class="row d-flex">
-        <div class="col-md-6 col-lg-6 d-flex">
+        <div class="col-md-6 col-lg-6 col-sm-4 d-flex">
           <div class="img-about img d-flex">
-            <img class="img" src="img/about/Crossfit.JPG" alt="">
+            <img class="img img-fluid" src="img/about/Crossfit.JPG" alt="image about me crossfit">
           </div>
         </div>
         <div class="col-md-6 col-lg-6 pl-md-5">
@@ -141,12 +145,12 @@
               De ce fait, j’ai acquis un certain nombre de compétences qui pourront tout à fait être transférables.
             </p>
 
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="row g-4">
               <div class="col">
-                <img src="img/about/imgabout1.jpg" class="card-img-top" alt="...">
+                <img src="img/about/imgabout1.jpg" class="card-img-top" alt="image about me snow">
               </div>
               <div class="col">
-                <img src="img/about/imgabout2.jpg" class="card-img-top" alt="...">
+                <img src="img/about/imgabout2.jpg" class="card-img-top" alt="image about me road">
               </div>
             </div>
           </div>
@@ -159,14 +163,7 @@
       </div>
     </div>
   </section>
-
   <!-- FIN À PROPOS -->
-
-
-
-
-
-
 
 
   <!-- MON PARCOURS -->
@@ -366,7 +363,7 @@
 
   <!-- CONTACT -->
   <a id="contact"></a>
-  <section class="content-page background-contact mt-5">
+  <section class="content-page background-contact mt-5 img-fluid">
 
     <!-- FORMULAIRE CONTACT -->
     <div class="col-lg-12 col-md-12 center-contact" ng-app="" ng-init="
@@ -379,7 +376,7 @@
          email='heroanneolivier@gmail.com'">
 
       <div class="row">
-        <div class="col-sm-6 p-5">
+        <div class="col-sm p-5">
 
           <!-- PARTIE FORM -->
           <div class="text-center" style="font-size: 3rem;">
@@ -393,14 +390,14 @@
                 <label for="firstName">Prénom:</label>
                 <input type="text" id="firstName" name="firstName"
                   class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Saisissez votre prénom"
-                  ng-model="firstName" required/>
+                  ng-model="firstName" required>
               </div>
 
               <div class="col-md">
                 <label for="lastName">Nom:</label>
                 <input type="text" id="lastName" name="lastName"
                   class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3"
-                  placeholder="Veuillez entrer votre nom de famille" ng-model="lastName" required/>
+                  placeholder="Veuillez entrer votre nom de famille" ng-model="lastName" required>
               </div>
             </div>
 
@@ -408,13 +405,13 @@
               <div class="col-md">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="Email" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3"
-                  placeholder="Veuillez entrer votre Email" ng-model="email" required/>
+                  placeholder="Veuillez entrer votre Email" ng-model="email" required>
               </div>
 
               <div class="col-md">
                 <label for="place">Pays:</label>
                 <input type="text" id="place" name="place" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3"
-                  placeholder="Veuillez entrer votre pays" ng-model="place" required/>
+                  placeholder="Veuillez entrer votre pays" ng-model="place" required>
               </div>
             </div>
 
@@ -422,14 +419,14 @@
               <div class="col-md">
                 <label for="company">Entreprise:</label>
                 <input type="text" id="company" name="company" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3"
-                  placeholder="Veuillez entrer le nom de votre entreprise" ng-model="company" required/>
+                  placeholder="Veuillez entrer le nom de votre entreprise" ng-model="company" required>
               </div>
 
               <div class="col-md">
                 <label for="profession">Profession:</label>
                 <input type="text" id="profession" name="profession"
                   class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3"
-                  placeholder="Veuillez entrer votre profession" ng-model="profession" required/>
+                  placeholder="Veuillez entrer votre profession" ng-model="profession" required>
               </div>
             </div>
 
@@ -447,7 +444,7 @@
         </div>
 
         <!-- PARTIE PAPIER -->
-        <div class="col-sm-6">
+        <div class="col-sm">
           <div class="paper">
             <div class="lines">
               <div class="Lettertext" spellcheck="false">
